@@ -14,8 +14,8 @@ def header_format(h):  #用于转译网页headers信息，h用于输入headers�
     #print(type(lst))
     m=[]
     for i in lst:
-        key=i.split(':')[0]
-        value=i.split(':')[1]
+        key=i.split(':')[0].strip()
+        value=i.split(':')[1].strip()
         #print(key,value)
         m.append([str(key),str(value)])
     return(dict(m))
